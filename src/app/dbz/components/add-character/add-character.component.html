@@ -1,0 +1,25 @@
+<form (ngSubmit)="addCharacter()">
+  <div class="mb-3">
+    <label for="name" class="form-label">Nombre</label>
+    <input
+      type="text"
+      id="name"
+      class="form-control"
+      [(ngModel)]="newCharacter.name"
+      name="name"
+      required
+    />
+  </div>
+  <div class="mb-3">
+    <label for="power" class="form-label">Poder</label>
+    <input
+      type="number"
+      id="power"
+      class="form-control"
+      [(ngModel)]="newCharacter.power"
+      name="power"
+      required
+    />
+  </div>
+  <button type="submit" class="btn btn-primary">Agregar</button>
+</form>
